@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revanth Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c2b9972f60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div id="container">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Resume</a></li> 
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <div class="header-text">
+        <p>Designer</p>
+        <h1><i><span>Naga Sai Revanth</span></i></h1>
+    </div>
+
+    </div>
+</div>
+<!--Adding About-->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-colum1">
+                <img src="images/Revanth2.jpeg" alt="Image">
+            </div>
+            <div class="about-colum2">
+                <h1 class="subtitle">About me</h1>
+                <p>I am Naga Sai Revanth Completed Btech and Gained Knowledge on various Languages and to the technologies available in the market</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Language1</span><br>C Programming</li>
+                        <li><span>Language2</span><br>python Programming</li>
+                        <li><span>Language3</span><br>java Programming</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>No Experience</span><br>At present Fresher</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>Board of Secondary Education<br><i>Dr KKR Gowtham School</i></li>
+                        
+                        <li><span>2020</span><br>Board of Intermediate Education
+                            <i>Narayana Junior College
+                            </i></li>
+                        <li><span>2024</span><br>BACHELOR OF TECHNOLOGY<i>KKR AND KSR INSTITUTE OF TECHNOLOGY AND SCIENES</i> </li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="servies-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>
+                    The way to develop a new site depends on the way we think and what we see and analyze the condition
+
+                </p>
+                <a href="#">learn more</a>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-invision"></i>
+                <h2>MObile app Development</h2>
+                <p>
+                    The way to develop a new site depends on the way we think and what we see and analyze the condition
+
+                </p>
+                <a href="#">learn more</a>
+
+            </div>
+            <div>
+                <i class="fa-brands fa-apple"></i>
+                <h2>Front end Developer</h2>
+                <p>
+                    The way to develop a new site depends on the way we think and what we see and analyze the condition
+
+                </p>
+                <a href="#">learn more</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+
+</script>
+
+    
+</body>
+</html>

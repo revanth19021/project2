@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkmode</title>
+    <style>
+        body{
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+        .dark-mode{
+            background-color: black;
+            color:white;
+        }
+        .Light-mode{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Revanth</h1>
+    <p>this is representation of dark mode</p>
+    <img src="https://pps.whatsapp.net/v/t61.24694-24/308913633_167646539239103_6225035640455674430_n.jpg?ccb=11-4&oh=01_AdQ027Chva6Yx6oRUKmdz_Gb28GykUZxrjeuUX8MFkqRIQ&oe=636B14FC"/>
+    <h3 id="Darkmode">Darkmode is off</h3>  
+    <button onclick="darkmode()">darkmode</button>  
+    <button onclick="Lightmode()">lightmode</button>
+    <script>
+        function darkmode(){
+            var element=document.body;
+            var content=document.getElementById('Darkmode')
+            element.className="dark-mode";
+            content.innerText="Darkmode is on"
+        }
+        function Lightmode(){
+            var element=document.body;
+            var content=document.getElementById('Darkmode')
+            element.className="Light-mode";
+            content.innerText="Darkmode is off"
+        }
+    </script>
+</body>
+</html>
